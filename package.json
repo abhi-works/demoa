@@ -32,7 +32,7 @@
     ]
   },
   "dependencies":{
-  "antd": "^5.2.1",
+  "antd": "^5.2.1"
 },
    
   "devDependencies": {
