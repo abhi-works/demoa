@@ -4,10 +4,6 @@
   "private": true,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "files": [
-    "dist",
-    "package.json"
-  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf /dist && npm run build:esm && npm run build:cjs",
