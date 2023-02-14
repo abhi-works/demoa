@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { Button } from 'antd'
 export const Greetings = () => {
     return (
-        <div>Greetings</div>
+        <Button>hi</Button>
     )
 }
