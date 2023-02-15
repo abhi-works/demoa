@@ -32,10 +32,6 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {
-    "antd": "^5.2.1",
-    "demoa": "github:abhi-works/demoa"
-  },
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
