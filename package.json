@@ -6,8 +6,8 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "comj": "copyfiles -u 2 \"src/**/*.js\" \"dist/cjs\"",
-    "comja": "copyfiles -u 2 \"src/**/*.js\" dist/",
+    "comj": "ncp src/ dist/cjs",
+    "comja": "copyfiles -u 1 \"src/**/*.js\" dist/",
     "comjab": "copyfiles -u 2 \"src/**/*.js\" fg",
     "build": "rm -rf /dist && npm run build:cjs && npm run comj && npm run comja  && npm run comjab",
     "build:esm": "tsc",
@@ -40,6 +40,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "copyfiles": "^2.4.1",
+    "ncp": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
