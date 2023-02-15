@@ -7,7 +7,7 @@
   "scripts": {
     "start": "react-scripts start",
     "comj": "copyfiles -u 1 \"src/*.css\" dist/",
-    "build": "rm -rf /dist && npm run build:cjs && npm run comj",
+    "build": "rm -rf /dist && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonJS --outDir dist/cjs",
     "test": "react-scripts test",
