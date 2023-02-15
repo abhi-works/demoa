@@ -6,7 +6,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "comj": "copyfiles -u 1 src/**/*.html src/**/*.css dist/cjs",
+    "comj": "copyfiles -u 1 src/**/*.html src/**/*.scss dist/cjs",
     "build": "rm -rf /dist && npm run build:cjs && npm run comj",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonJS --outDir dist/cjs",
@@ -33,7 +33,8 @@
     ]
   },
   "dependencies": {
-    "antd": "^5.2.1"
+    "antd": "^5.2.1",
+    "demoa": "github:abhi-works/demoa"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
