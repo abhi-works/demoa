@@ -6,7 +6,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "comj": "copyfiles -u 1 src/**/*.html src/**/*.css dist/cjs",
+    "comj": "cpy '**/*' '!**/*.ts' ../lib/ --cwd=src/ --no-overwrite --parents",
     "build": "rm -rf /dist && npm run build:cjs && npm run comj",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonJS --outDir dist/cjs",
@@ -38,6 +38,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "copyfiles": "^2.4.1",
+    "cpy-cli": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
