@@ -6,7 +6,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "comj": "copyfiles -u 1 \"./src/components/**/*.scss\" \"dist/cjs\"",
+    "comj": "copyfiles -u 1 \"./src/components/**/*.scss\" \"dist\"",
     "build": "rm -rf /dist && npm run build:cjs && npm run comj",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonJS --outDir dist/cjs",
