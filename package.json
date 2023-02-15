@@ -9,7 +9,7 @@
     "comj": "find ./src -name '*.js' -type f -exec cp --parents {} ./dist \\;",
     "build": "rm -rf /dist && npm run build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonJS --outDir dist/cjs && npm run comj",
+    "build:cjs": "tsc --module commonJS --outDir dist/cjs && echo \"$PWD\" ",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "npm run build"
