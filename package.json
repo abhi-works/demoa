@@ -8,9 +8,9 @@
     "start": "react-scripts start",
     "remop": "del dist/",
     "comj": "cpy '**/*' '!**/*.ts' ../dist/ --cwd=src/ --no-overwrite --parents",
-    "build": "npm run remop && npm run build:cjs && npm run comj",
+    "build": "npm run remop && npm run build:cjs ",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonJS --outDir dist/cjs",
+    "build:cjs": "tsc -w --copy-files --module commonJS --outDir dist/cjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "npm run build"
